@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <style>
+       
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h5>Hello world</h5>
+        </div>
+    </div>
+</body>
+
+    <script>
+        var settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "https://data.gov.sg/api/action/datastore_search?resource_id=83c21090-bd19-4b54-ab6b-d999c251edcf&q=2020",
+            "method": "GET"
+        }
+
+        $.ajax(settings).done(function (response) {
+            console.log(response)
+        });
+    </script>
+
+</html>
